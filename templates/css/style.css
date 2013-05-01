@@ -1,0 +1,246 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+blockquote, q {
+	quotes: none;
+}
+:focus {
+	outline: 0;
+}
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+header, nav, section, article, aside, footer {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, Tahoma, Verdana, sans-serif;
+	width: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-image: url("../img/bg/01.jpg");
+  -o-background-size: cover cover;  
+  -webkit-background-size:cover cover; 
+  -moz-background-size:cover cover; 
+  -khtml-background-size:cover cover; 
+  background-size: cover cover;
+}
+a {
+	color: blue;
+	outline: none;
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+}
+p {
+	margin: 0 0 18px
+}
+img {
+	border: none;
+}
+input {
+	vertical-align: middle;
+}
+
+.left {float: left;}
+.right {float: right;}
+.clearfix {clear: both;}
+
+#wrap {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+/* Шапка
+-----------------------------------------------------------------------------*/
+header {
+  height: 260px;
+  margin-top: 20px;
+}
+
+  /* --- Логотип --- */
+  header #logo {
+    width: 312px;
+    height: 254px;
+  }
+  
+    header #logo a {
+      background: url("../img/logo.png") no-repeat;
+      width: 292px;
+      height: 254px;
+      display: block;
+    }
+  
+  /* --- Плеер --- */  
+  header #player {
+    background: url("../img/player.png") no-repeat;
+    width: 460px;
+    height: 233px;
+    padding-left: 10px;
+    margin-left: -5px;
+  }
+  
+    /* Сейчас играет */
+    header #player .now {
+      width: 453px;
+      height: 28px;
+      background-color: #ffe3a6;
+      margin: 5px 0 10px 0.5px;
+    }
+    
+      header #player .now b {
+        width: 66px;
+        height: 28px;
+        background-color: #644a14;
+        border-right: 3px solid #b37f12;
+        display: block;
+        font: bold 24px "Myriad Pro Cond", sans-serif;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        float: left;
+      }
+      
+      /* Бегущая строка */
+      header #player .now .now_name {
+        font: 12px Arial, serif;
+        color: #464545;
+        display: block;
+        float: left;
+        width: 360px;
+        margin: 7px 0 0 10px;
+      }
+
+    /* Кнопки управления плеером */
+    header #player .player_button {
+      width: 61px;
+      height: 128px;
+      margin: 0 5px 5px 0;
+    }
+      
+      header #player .player_button a {
+        width: 61px;
+        height: 60px;
+        display: block;
+        margin-bottom: 8px;                
+        background-color: #644a14;  
+      }    
+      
+        /* Пауза */
+        header #player .player_button a.pause {
+          padding: 9px 0 0 15px;
+          width: 46px;
+          height: 51px;
+        }
+        
+          header #player .player_button a.pause span {
+            width: 10px;
+            height: 42px;
+            display: inline-block;
+            background-color: #fff;
+            margin-right: 10px;
+          }
+          
+        header #player .player_button a.play {
+          padding: 9px 0 0 10px;
+          width: 51px;
+          height: 51px;
+        }
+        
+          header #player .player_button a.play span {
+            width: 0px;
+            height: 0px;
+            border-style: solid;
+            border-width: 21.5px 0 21.5px 40px;
+            border-color: transparent transparent transparent #ffffff;
+            line-height: 0px;
+            _border-color: #000000 #000000 #000000 #ffffff;
+            _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+            display: block;
+          }
+    
+    /* Слушатели, громкость, битрейт */
+    header #player .topline {
+      width: 450px;
+      height: 30px;
+      background-color: #644a14;
+      margin: 10px 0;
+      display: block;
+    }
+    
+    header #player .topline .listen {
+      width: 150px;
+      height: 19px;
+      display: block;
+      background-color: #fff0d0;
+      float: left;
+      text-align: center;
+      padding-top: 8px;
+      font: 12px Arial;
+      color: #464545;
+    }
+
+    header #player .topline .bitrate {
+      width: 150px;
+      height: 19px;
+      display: block;
+      background-color: #fff0d0;
+      float: left;
+      text-align: center;
+      padding-top: 8px;
+      font: 12px Arial;
+      color: #464545;
+    }
+        
+    /* Слайдер */
+    header #player .slider {
+      width: 365px;
+      height: 113px;
+      background-color: #fff0d0;
+      margin-left: 3px;
+      padding: 15px 0 0 15px;
+    }  
+    
+      header #player .slider .slider_ava {
+        background: url("../img/slider_ava.png") no-repeat;
+        width: 82px;
+        height: 82px;
+        padding: 2px 0 0 3px;
+        margin-right: 10px;
+      }   
+      
+      header #player .slider p {
+        font: 11px Arial;
+        color: #171717;
+        line-height: 17px;
+        width: 95%;
+      } 
+    
+  /* --- Расписание --- */
+  #efir_time {
+    background: url("../img/efir_time.png") no-repeat;
+    width: 221px;
+    height: 246px;
+  }  
